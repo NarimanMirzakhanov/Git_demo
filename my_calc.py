@@ -1,17 +1,17 @@
-def add(a, b):
+def addition(a, b):
     return a + b
 
 
-def sub(a, b):
+def extraction(a, b):
     return a - b
 
 
-def mult(a, b):
+def multiplication(a, b):
     return a * b
 
 
-def div(a, b):
-    if b == 0:
+def division(a, b):
+    if not b:
         return "На ноль делить нельзя"
     else:
         return a / b

@@ -20,14 +20,16 @@
 # print(type(tuple_pets))
 
 # # Task 3.4
-# family_1 = input("Введите членов семьи №1: ").split(', ')
-# family_2 = input("Введите членов семьи №2: ").split(', ')
-# if len(family_1) > len(family_2):
-#     print("family_1 больше")
-# elif len(family_1) < len(family_2):
-#     print("family_2 больше")
-# else:
-#     print('Equal')
+family_1 = input("Введите членов семьи №1: ").split(', ')
+family_2 = input("Введите членов семьи №2: ").split(', ')
+print(family_1)
+print(family_2)
+if len(family_1) > len(family_2):
+    print("family_1 больше")
+elif len(family_1) < len(family_2):
+    print("family_2 больше")
+else:
+    print('Equal')
 
 # # Task 3.5
 # film = {

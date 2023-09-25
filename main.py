@@ -1,20 +1,48 @@
-print("Hello World!", "Nariman", sep='&', end='!!')
-print('\n')
+# x = 15
+# y = 25
+#
+# def sum_it(x, y):
+#     print(f"locals {locals()}")
+#     return x + y
+#
+#
+# print(f"Inside the function: {sum_it(10, 18)}")
+# print(f"Outside yhe function: {x + y}")
+# print(f"Globals: {globals()}")
 
-a = [1, 4, 6, 10, 33]
-for i in a:
-    if i % 2 == 0:
-        print(i, end=' ')
 
-print('\n')
-print(abs(-7))
-print(min(8, 4, 7))
-print(max(8, 4, 7))
-print(pow(2, 4))
-print(round(3.4))
-print('Hello ' * 5)
+# name = 'Alice'
+#
+# def outer_function():
+#     # name = 'Albert'
+#     def inner_function():
+#         # name = 'Alex'
+#         return name
+#     return inner_function
+#
+# closure = outer_function()
+# result = closure()
+#
+# print(result)
 
-text = "Hello world"
-print('e' in text)
-print(text[1:4])
 
+# result = lambda n: n * n
+# print(result(5))
+
+list_1 = ['Hi', 'ananas', 2, None, 75, 'pizza', 36, 100]
+def filter_and_sum(lst):
+    new_l = []
+    for x in lst:
+        if isinstance(x, int):
+            new_l.append(x)
+    print(new_l)
+    return sum(new_l)
+
+
+print(filter_and_sum(list_1))
+
+new_l = sum(filter(lambda x: isinstance(x, int), list_1))
+print(new_l)
+
+filtered = list(filter(lambda x: isinstance(x, str), list_1))
+print(list(filter(lambda i: 'a' in i, filtered)))

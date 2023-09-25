@@ -1,6 +1,6 @@
 import time
 from functools import reduce
-from my_calc import add as s
+from my_calc import addition as s
 
 
 # Task 4.1
